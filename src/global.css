@@ -32,7 +32,8 @@ h1 {
 
 h2 {
   font-size: 4rem;
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
 }
 
 section, h1, h2, h3 {
