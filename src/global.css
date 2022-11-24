@@ -41,5 +41,13 @@ section, h1, h2, h3 {
 section {
   line-height: 1.5;
   letter-spacing: .03em;
-/* color: red; */
 }
+
+.reactThreeFiber {
+  position: fixed!important;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+

@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./global.css";
-import styles from "./index.module.css";
 import App from "./components/App";
 import { Canvas } from "@react-three/fiber";
 
@@ -9,19 +8,16 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Canvas
-      className={styles.canvas}
+      className="reactThreeFiber"
       camera={{
         position: [0, 0, 4],
         fov: 45,
       }}
-      gl={{
-        alpha: true,
-        antialias: true,
-        // toneMapping: THREE.sRGBEncoding
-      }}
     >
       <App />
     </Canvas>
+
+    {/* CONTENT BELOW HERE 👇🏻 */}
     <div className="sections">
       <h1>3D Primitives</h1>
       <section>

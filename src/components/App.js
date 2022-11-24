@@ -1,5 +1,3 @@
-// import logo from './logo.svg';
-import "./App.css";
 
 import { useMemo, useRef } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
@@ -18,8 +16,9 @@ function App() {
     const s = scroll.current;
 
     camera.position.y = -s * 30;
+    
     const mouseDestX =  mouse.current * 2;
-    camera.position.x += ((mouseDestX - camera.position.x) / 20);
+    camera.position.x += (mouseDestX - camera.position.x) / 20;
     
     group.current.children.forEach(c => {
       c.rotation.x = scroll.current * 40;
